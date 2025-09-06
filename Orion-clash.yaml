@@ -31,7 +31,9 @@ tcp-concurrent: true
 # interface-name: enp6s18
 log-level: warning
 find-process-mode: 'off'
-global-client-fingerprint: chrom
+global-client-fingerprint: chrome
+keep-alive-idle: 600
+keep-alive-interval: 15
 profile:
   store-selected: true
   store-fake-ip: true
@@ -468,5 +470,4 @@ rule-providers:
     format: text
     interval: 43200
     url: https://ruleset.skk.moe/Clash/ip/domestic.txt
-
     path: ./sukkaw_ruleset/domestic_ip.txt
